@@ -1,0 +1,19 @@
+
+cd /Users/ruediheimlicher/Documents/Elektronik/\ AVR/\ AVR_Programme/AVR\ HomeCentral/Master/TWI_Master_C_git/TWI_Master_C_5
+avr-size -C --mcu=atmega644p TWI_Master.elf
+
+171223 
+ruediheimlicher:TWI_Master_C_5 ruediheimlicher$ avr-size -C --mcu=atmega644p TWI_Master.elf
+AVR Memory Usage
+----------------
+Device: atmega644p
+
+Program:   21908 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:        762 bytes (18.6% Full)
+(.data + .bss + .noinit)
+
+EEPROM:        4 bytes (0.2% Full)
+(.eeprom)
+
