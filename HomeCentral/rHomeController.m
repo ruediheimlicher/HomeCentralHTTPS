@@ -126,7 +126,7 @@
 {
    debugstring = @"debug: ";
    NSString* loadstring = @"Start ";
-   NSLog(@"loadstring: %@",loadstring);
+  // NSLog(@"loadstring: %@",loadstring);
    loadstring = [loadstring stringByAppendingString:@"A"];
    NSLog(@"loadstring: %@",loadstring);
    [super viewDidLoad];
@@ -170,10 +170,10 @@
    self.WochentagArray = [NSArray arrayWithObjects:@"MO",@"DI",@"MI",@"DO",@"FR",@"SA", @"SO",nil];
    self.aktuellerRaum =0;
 
-   NSString *WochenplanString = [self readWochenplan];
+// *   NSString *WochenplanString = [self readWochenplan];
    debugstring = [debugstring stringByAppendingString:@"B"];
    //NSLog(@"viewDidLoad DataString: %@",WochenplanString);
-   self.wochenplanarray = [WochenplanString componentsSeparatedByString:@"\n"];
+// *   self.wochenplanarray = [WochenplanString componentsSeparatedByString:@"\n"];
    //NSLog(@"wochenplanarray: %@",[self.wochenplanarray description]);
   
    
