@@ -110,7 +110,7 @@
 
 @property (nonatomic, readwrite) int                              permanent;
 + (void)checkInternetConnectivityWithSuccessCompletion:(void (^)(void))completion ;
-- (DotColors*)returnSwiftClassInstance;
+//- (DotColors*)returnSwiftClassInstance;
 - (void)showDebug:(NSString*)warnung;
 - (NSString*)passwortstring;
 - (IBAction)reportResetTaste:(id)sender;

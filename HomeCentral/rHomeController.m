@@ -8,7 +8,7 @@
 
 #import "rHomeController.h"
 #import "rEingabeController.h"
-#import "Reachability.h"
+//#import "Reachability.h"
 
 #import "HomeCentral-Swift.h"
 //#import "rURL.swift"
@@ -471,12 +471,13 @@
 
 - (void)backgroundaktion:(NSNotification*)note
 {
+   
    NSLog(@"backgroundaktion on: %d",self.twitaste.on);
    
   if ((self.twitaste) && (self.twitaste.on == 0))
    {
       NSLog(@"backgroundaktion twitaste ist noch off");
-      [self setTWIState:YES];
+//      [self setTWIState:YES];
    }
    else
    {
@@ -492,7 +493,7 @@
    if (self.twitaste && (self.twitaste.on == 0))
    {
       NSLog(@"resignaktion twitaste ist noch off");
-      [self setTWIState:YES];
+ //     [self setTWIState:YES];
    }
    else
    {
@@ -1169,6 +1170,7 @@
       self.ladeindikator.hidden = NO;
       
       // https
+/*      
       Reachability* reach = [Reachability reachabilityWithHostname:@"ruediheimlicherhome.dyndns.org"];
       
       // Set the blocks
@@ -1185,39 +1187,8 @@
          //[self setTWIState:NO];
          
          
-         /*
-          if ([[reach currentReachabilityString] isEqualToString:@"No Connection"])
-          {
-          self.twialarm.hidden=YES;
-          //NSLog(@"in reachableBlock: keine Verbindung");
-          [self.ladeindikator stopAnimating];
-          
-          self.ladeindikator.hidden = YES;
-          self.twitaste.on=YES;
-          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Keine Verbindung zum Internet" message:@"in reachableBlock: : +Mobile Daten muss aktiviert sein" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil,nil];
-          [alert show];
-          
-          return;
-          }
-          */
-         
+            
       };
-      /*
-       if ([[reach currentReachabilityString] isEqualToString:@"No Connection"])
-       {
-       
-       UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Keine Verbindung zum Internet"
-       message:@"Mobile Daten muss aktiviert sein."
-       preferredStyle:UIAlertControllerStyleAlert];
-       
-       UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-       handler:^(UIAlertAction * action) {}];
-       
-       [alert addAction:defaultAction];
-       [self presentViewController:alert animated:YES completion:nil];
-       
-       }
-       */
       
       reach.unreachableBlock = ^(Reachability*reach)
       {
@@ -1257,6 +1228,7 @@
          return;
       }
       else
+ */
       {
          
          NSString* TWIStatusSuffix = [NSString stringWithFormat:@"pw=%s&status=%@",PW,@"0"];
@@ -1683,14 +1655,14 @@
    // Setting a timeout
    request.timeoutInterval = 20.0;
    
-   NSURLSession *session = [NSURLSession sharedSession];
+ //  NSURLSession *session = [NSURLSession sharedSession];
    
    // http://hayageek.com/ios-nsurlsession-example
    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration ephemeralSessionConfiguration];
    
    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
    
-   NSURL * url = [NSURL URLWithString:@"http://hayageek.com/examples/jquery/ajax-post/ajax-post.php"];
+ //  NSURL * url = [NSURL URLWithString:@"http://hayageek.com/examples/jquery/ajax-post/ajax-post.php"];
    
    //NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:url];
    NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:URL];
@@ -1947,7 +1919,7 @@
 -(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
    didReceiveData:(NSData *)data {
    //receivedAnswerString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]; 
-   //NSLog(@"didReceiveData: receivedAnswerString: %@",receivedAnswerString);
+   NSLog(@"HomeController didReceiveData: receivedAnswerString: %@",receivedAnswerString);
    NSString * HTML_Inhalt = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]; 
    NSLog(@"didReceiveData: HTML_Inhalt: %@",HTML_Inhalt);
   // [receivedData appendData:data];

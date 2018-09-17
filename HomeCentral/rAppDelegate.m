@@ -26,6 +26,7 @@
    NSStringEncoding *  enc=0;
    NSError* WebFehler=NULL;
   //
+   return YES; 
    NSMutableURLRequest* IPrequest = [NSMutableURLRequest requestWithURL:URL cachePolicy:0 timeoutInterval:10];
    NSURLResponse* response=nil;
    // http://hayageek.com/ios-nsurlsession-example
@@ -36,7 +37,8 @@
    [IPrequest setHTTPMethod:@"GET"];
    
    NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:IPrequest];
-   [dataTask resume];
+
+   //   [dataTask resume];
    return YES;
    
    
@@ -102,10 +104,10 @@
 -(void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
    didReceiveData:(NSData *)data {
    //receivedAnswerString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]; 
-   //NSLog(@"didReceiveData: receivedAnswerString: %@",receivedAnswerString);
+   //NSLog(@"AppDelegate didReceiveData: receivedAnswerString: %@",receivedAnswerString);
    //NSString * HTML_Inhalt = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]; 
    NSString * IPString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]; 
-   NSLog(@"didReceiveData: IPString: %@",IPString);
+   NSLog(@"AppDelegate didReceiveData: IPString: %@",IPString);
    NSLog(@"IP: %@",IPString);
    if (IPString)
    {
