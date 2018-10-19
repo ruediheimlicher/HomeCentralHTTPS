@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="qAe-0z-XYP">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="qAe-0z-XYP">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4352" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Helvetica.ttc">
-            <string>Helvetica</string>
-            <string>Helvetica-BoldOblique</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Web-->
         <scene sceneID="Wf8-xV-99a">
             <objects>
                 <viewController id="40Y-ka-res" customClass="rBrowserController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4e-Z7-eYV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="ozs-tJ-WNS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -41,14 +35,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jun-FD-kYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-179" y="427"/>
+            <point key="canvasLocation" x="-281" y="258"/>
         </scene>
         <!--Strom-->
         <scene sceneID="U5b-Jf-mh8">
             <objects>
                 <viewController storyboardIdentifier="stromid" id="9tv-8I-dah" customClass="rStromController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wqb-Kr-fVH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Strom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7zy-dN-abg">
@@ -152,14 +146,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4L-gq-Adu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="665"/>
+            <point key="canvasLocation" x="222" y="798"/>
         </scene>
         <!--Solar-->
         <scene sceneID="gO1-Ra-PdB">
             <objects>
                 <viewController id="KJh-Ma-JID" customClass="rSolarController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afx-AQ-ifP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3ry-BG-QtK">
@@ -193,8 +187,8 @@
                                 <rect key="frame" x="100" y="13" width="215" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Solar.jpg" id="H15-zl-UQ2">
-                                        <rect key="frame" x="8" y="9" width="198" height="369"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Solar.jpg" id="H15-zl-UQ2">
+                                        <rect key="frame" x="7" y="9" width="198" height="369"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="IIIIIIIIII" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rKA-Vf-2hg">
@@ -321,14 +315,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHX-Gm-j1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="676"/>
+            <point key="canvasLocation" x="694" y="769"/>
         </scene>
         <!--Home-->
         <scene sceneID="csh-Up-qSw">
             <objects>
                 <viewController id="mWg-Oq-M7P" customClass="rHomeController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0f-3l-H68">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vUy-Bx-DmB">
@@ -392,15 +386,15 @@
             <objects>
                 <viewController title="HomeCentral" id="fc2-zf-OXd" customClass="rHomeController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8xb-Ee-D3c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsVerticalScrollIndicator="NO" id="J45-RZ-TYJ">
-                                <rect key="frame" x="10" y="218" width="355" height="386"/>
+                                <rect key="frame" x="10" y="218" width="300" height="287"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="Vvf-Mq-191">
-                                        <rect key="frame" x="0.0" y="8" width="589" height="370"/>
+                                        <rect key="frame" x="0.0" y="8" width="534" height="271"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.67599624165993411" green="0.98971619897959184" blue="0.73715162673986745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -534,7 +528,7 @@
                                 <color key="color" red="0.99256616710000001" green="0.025422191520000002" blue="0.081877852459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="dGE-xk-34T">
-                                <rect key="frame" x="216" y="238" width="94" height="29"/>
+                                <rect key="frame" x="216" y="139" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="reportObjektStepper:" destination="dXL-OD-xTL" eventType="touchUpInside" id="KQY-k3-2GE"/>

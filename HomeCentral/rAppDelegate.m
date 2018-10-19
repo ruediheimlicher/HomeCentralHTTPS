@@ -17,6 +17,7 @@
                                                           [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:18.0], NSFontAttributeName, nil]];
 
    NSLog(@"didFinishLaunchingWithOptions: %@",[launchOptions description]);
+   /*
     // Override point for customization after application launch.
    NSString* DataSuffix=@"ip.txt";
    //NSLog(@"StromDataVonHeute  DownloadPfad: %@ DataSuffix: %@",ServerPfad,DataSuffix);
@@ -39,6 +40,7 @@
    NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:IPrequest];
 
    //   [dataTask resume];
+    */
    return YES;
    
    
@@ -76,6 +78,26 @@
    NSLog(@"applicationDidBecomeActive: ");
    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
    //NSArray* Kontroller = [self rootViewController];
+   NSString* DataSuffix=@"ip.txt";
+   //NSLog(@"StromDataVonHeute  DownloadPfad: %@ DataSuffix: %@",ServerPfad,DataSuffix);
+   NSString* ServerPfad =@"https://www.ruediheimlicher.ch/Data";
+   NSURL *URL = [NSURL URLWithString:[ServerPfad stringByAppendingPathComponent:DataSuffix]];
+   NSLog(@"didFinishLaunchingWithOptions IP URL: %@",URL);
+   NSStringEncoding *  enc=0;
+   NSError* WebFehler=NULL;
+   //
+   //return YES; 
+   NSMutableURLRequest* IPrequest = [NSMutableURLRequest requestWithURL:URL cachePolicy:0 timeoutInterval:10];
+   NSURLResponse* response=nil;
+   // http://hayageek.com/ios-nsurlsession-example
+   NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+   
+   NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
+   
+   [IPrequest setHTTPMethod:@"GET"];
+   
+   NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:IPrequest];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
