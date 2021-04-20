@@ -16,12 +16,13 @@ class DotColors {
    
 }
 
-@objc class rURLTask:NSObject
+//@objc class rURLTask:NSObject
+class rURLTask:NSObject
 {
    var loadURL:URL?
    var wert:String?
  override init() {}
-   
+  /* 
  @objc   public func primer()
    {
       print("primer")
@@ -30,8 +31,9 @@ class DotColors {
    {
       print("follower")
    }
-
-   @objc    public func ladeWert(wert: String?)
+*/
+   //@objc    public func ladeWert(wert: String?)
+   public func ladeWert(wert: String?)
    {
       self.wert = wert
       print("ladeWert: (wert)")
@@ -39,7 +41,9 @@ class DotColors {
 
    
    
-@objc    public func ladeURL(url: URL?){
+   //@objc    public func ladeURL(url: URL?)
+   public func ladeURL(url: URL?)
+   {
       self.loadURL = url
    print("loadURL: \(String(describing: loadURL))")}
 }

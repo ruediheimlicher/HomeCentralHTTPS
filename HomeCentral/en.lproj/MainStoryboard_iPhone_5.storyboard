@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="qAe-0z-XYP">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="qAe-0z-XYP">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4352" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="40Y-ka-res" customClass="rBrowserController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4e-Z7-eYV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="ozs-tJ-WNS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -35,14 +35,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jun-FD-kYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="258"/>
+            <point key="canvasLocation" x="-286.39999999999998" y="384.10794602698655"/>
         </scene>
         <!--Strom-->
         <scene sceneID="U5b-Jf-mh8">
             <objects>
                 <viewController storyboardIdentifier="stromid" id="9tv-8I-dah" customClass="rStromController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wqb-Kr-fVH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Strom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7zy-dN-abg">
@@ -146,14 +146,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4L-gq-Adu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="798"/>
+            <point key="canvasLocation" x="543" y="608"/>
         </scene>
         <!--Solar-->
         <scene sceneID="gO1-Ra-PdB">
             <objects>
                 <viewController id="KJh-Ma-JID" customClass="rSolarController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afx-AQ-ifP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3ry-BG-QtK">
@@ -187,8 +187,8 @@
                                 <rect key="frame" x="100" y="13" width="215" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Solar.jpg" id="H15-zl-UQ2">
-                                        <rect key="frame" x="7" y="9" width="198" height="369"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Solar.jpg" id="H15-zl-UQ2">
+                                        <rect key="frame" x="8" y="9" width="198" height="369"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="IIIIIIIIII" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rKA-Vf-2hg">
@@ -315,14 +315,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHX-Gm-j1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="769"/>
+            <point key="canvasLocation" x="1145.5999999999999" y="608.09595202398805"/>
         </scene>
         <!--Home-->
         <scene sceneID="csh-Up-qSw">
             <objects>
                 <viewController id="mWg-Oq-M7P" customClass="rHomeController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0f-3l-H68">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vUy-Bx-DmB">
@@ -332,25 +332,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oUG-nd-Vcm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oUG-nd-Vcm">
                                 <rect key="frame" x="7" y="162" width="39" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Info">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Haus_web.jpg" id="RP4-PZ-258">
-                                <rect key="frame" x="0.0" y="0.0" width="145" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="IP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1SU-bh-c6N">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="IP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1SU-bh-c6N">
                                 <rect key="frame" x="175" y="133" width="153" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceHorizontal="YES" id="uRK-aQ-n4x">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" id="uRK-aQ-n4x">
                                 <rect key="frame" x="55" y="239" width="280" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -362,11 +358,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </scrollView>
-                            <view contentMode="scaleToFill" misplaced="YES" id="FVb-fg-CCR" customClass="rOrdinate">
+                            <view contentMode="scaleToFill" id="FVb-fg-CCR" customClass="rOrdinate">
                                 <rect key="frame" x="28" y="238" width="25" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75889917890000003" green="0.83543925379999995" blue="0.82635009910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Haus-web.jpg" id="RP4-PZ-258">
+                                <rect key="frame" x="16" y="12" width="145" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.19328373222894091" green="1" blue="0.30749288505307426" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -379,22 +379,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNS-ik-y73" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638.5" y="110.5"/>
+            <point key="canvasLocation" x="1021.6" y="99.400299850074973"/>
         </scene>
         <!--HomeCentral-->
         <scene sceneID="4eZ-HT-ylb">
             <objects>
                 <viewController title="HomeCentral" id="fc2-zf-OXd" customClass="rHomeController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8xb-Ee-D3c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsVerticalScrollIndicator="NO" id="J45-RZ-TYJ">
-                                <rect key="frame" x="10" y="218" width="300" height="287"/>
+                                <rect key="frame" x="10" y="218" width="355" height="386"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="Vvf-Mq-191">
-                                        <rect key="frame" x="0.0" y="8" width="534" height="271"/>
+                                        <rect key="frame" x="0.0" y="8" width="589" height="370"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.67599624165993411" green="0.98971619897959184" blue="0.73715162673986745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -528,7 +528,7 @@
                                 <color key="color" red="0.99256616710000001" green="0.025422191520000002" blue="0.081877852459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="dGE-xk-34T">
-                                <rect key="frame" x="216" y="139" width="94" height="29"/>
+                                <rect key="frame" x="216" y="238" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="reportObjektStepper:" destination="dXL-OD-xTL" eventType="touchUpInside" id="KQY-k3-2GE"/>
@@ -588,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXL-OD-xTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="149"/>
+            <point key="canvasLocation" x="1680" y="134.03298350824588"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Yad-G2-EuV">
@@ -628,12 +628,12 @@
                     <color key="backgroundColor" red="0.75889917890000003" green="0.83543925379999995" blue="0.82635009910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="222" y="25"/>
+            <point key="canvasLocation" x="355.19999999999999" y="22.488755622188908"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Haus_web.jpg" width="300" height="300"/>
-        <image name="Solar.jpg" width="250" height="449"/>
+        <image name="Haus-web.jpg" width="300" height="300"/>
+        <image name="Solar.jpg" width="120" height="215.52000427246094"/>
         <image name="pumpe.jpg" width="57" height="57"/>
         <image name="pumpe_grau.jpg" width="57" height="57"/>
         <image name="wolke.gif" width="100" height="71"/>

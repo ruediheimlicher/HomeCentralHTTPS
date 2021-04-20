@@ -925,6 +925,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+   [super viewWillAppear:animated];
    NSLog(@"SolarController viewWillAppear");
    
 	self.webfenster.delegate = self;	// setup the delegate as the web view is shown
@@ -934,6 +935,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+   [super viewWillDisappear:animated];
    [self.webfenster stopLoading];	// in case the web view is still loading its content
 	self.webfenster.delegate = nil;	// disconnect the delegate as the webview is hidden
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

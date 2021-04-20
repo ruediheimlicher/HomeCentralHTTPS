@@ -940,8 +940,8 @@
        self.permanent=4;
        NSString* HomeCentralString = [HomeCentralPfad stringByAppendingFormat:@"&permanent=%@&lbyte=%@&hbyte=%@&%@",@"4",lbyte,hbyte,DataString];
        NSLog(@"HomeCentralString temp: %@",HomeCentralString);
-       HomeCentralURL = [NSURL URLWithString:HomeCentralString];
-       [self loadURL:HomeCentralURL];
+       self->HomeCentralURL = [NSURL URLWithString:HomeCentralString];
+       [self loadURL:self->HomeCentralURL];
        [self restartTWITimer];
        [sender setEnabled:NO];
        self.statusanzeige.code = 0x01;
@@ -958,8 +958,8 @@
              self.permanent=3;
              NSString* HomeCentralString = [HomeCentralPfad stringByAppendingFormat:@"&permanent=%@&lbyte=%@&hbyte=%@&%@",@"3",lbyte,hbyte,DataString];
              NSLog(@"HomeCentralString permanent: %@",HomeCentralString);
-             HomeCentralURL = [NSURL URLWithString:HomeCentralString];
-             [self loadURL:HomeCentralURL];
+             self->HomeCentralURL = [NSURL URLWithString:HomeCentralString];
+             [self loadURL:self->HomeCentralURL];
              [self restartTWITimer];
              [sender setEnabled:NO];
              self.statusanzeige.code = 0x01;

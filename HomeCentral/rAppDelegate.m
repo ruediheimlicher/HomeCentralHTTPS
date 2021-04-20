@@ -31,6 +31,10 @@
    NSMutableURLRequest* IPrequest = [NSMutableURLRequest requestWithURL:URL cachePolicy:0 timeoutInterval:10];
    NSURLResponse* response=nil;
    // http://hayageek.com/ios-nsurlsession-example
+    
+    https://www.code-learner.com/ios-nsurlsession-tutorial/
+    
+    
    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration ephemeralSessionConfiguration];
    
    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
@@ -86,11 +90,17 @@
    NSStringEncoding *  enc=0;
    NSError* WebFehler=NULL;
    //
-   //return YES; 
+   
+   
+   
+   return;
+   
+   
+   
    NSMutableURLRequest* IPrequest = [NSMutableURLRequest requestWithURL:URL cachePolicy:0 timeoutInterval:10];
    NSURLResponse* response=nil;
    // http://hayageek.com/ios-nsurlsession-example
-   NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+   NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
    
    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
    

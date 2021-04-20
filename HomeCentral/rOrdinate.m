@@ -182,9 +182,9 @@ char* itoa(int val, int base)
    {
       int wert = self.startwert+i*self.intervall;
       //const char* cLegende = [[[NSNumber numberWithInt:wert]stringValue]UTF8String];
-      const char* cLegende = malloc(6);
+   //   const char* cLegende = malloc(6);
       //NSLog(@"Ordinate i: %d wert: %d",i,wert);
-      cLegende = [[[NSNumber numberWithInt:wert ]stringValue] UTF8String];
+   //   cLegende = [[[NSNumber numberWithInt:wert ]stringValue] UTF8String];
       x = self.offsetx;
       
       if (wert<10)
@@ -242,8 +242,8 @@ char* itoa(int val, int base)
    if ([self.einheit length])
    {
       CGContextBeginPath(context);
-      const char* cEinheit = malloc(4);
-      cEinheit = [self.einheit UTF8String];
+ //     const char* cEinheit = malloc(4);
+ //     cEinheit = [self.einheit UTF8String];
       //NSLog(@"cEinheit: %s",cEinheit);
       NSMutableAttributedString* einheitstring = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",self.einheit] attributes:tempAttr];
       
