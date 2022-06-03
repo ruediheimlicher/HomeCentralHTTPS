@@ -14,6 +14,8 @@
 #import "rAbszisse.h"
 #import "rVariableStore.h"
 
+#import <WebKit/WebKit.h>
+
 @interface rSolarController : UIViewController <UITextFieldDelegate, UIWebViewDelegate>
 
 {
